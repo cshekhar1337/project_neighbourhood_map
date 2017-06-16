@@ -14,5 +14,5 @@ Foursquare
 ## Steps for installation on local system
 1. "git clone https://github.com/cshekhar1337/project_neighbourhood_map.git"
 2. go inside folder project_neighbourhood_map/
-3. double click on main_page.html
+3. double click on index.html
 
