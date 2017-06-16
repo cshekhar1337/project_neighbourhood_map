@@ -13,8 +13,8 @@
 <body>
 <div class="container">
     <div id="map"></div>
-    <div class="options-box">
-        <header>
+    <div class="sidebar_food">
+        <div class = "search_label">
             <h1>DINNER PLACES IN SAN JOSE </h1>
            
             <input type="text" class="searchbox" data-bind="value: query, valueUpdate: 'keyup'" id="query-input" placeholder="Filter Results" autofocus>
@@ -23,7 +23,7 @@
             <br>
             <br>
             </p>
-        </header>
+        </div>
 
         
             <ul class="list-group"  id="query_List" data-bind="foreach: {data: Filtereddine_spotsList, as: 'dine_spot'}">

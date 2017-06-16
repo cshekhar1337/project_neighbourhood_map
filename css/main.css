@@ -1,5 +1,5 @@
-html,
-body {
+
+body,html {
     font-family: 'Lato', sans-serif;
     height: 100%;
     margin: 0;
@@ -13,6 +13,12 @@ h1 {
     text-align: center;
 }
 
+.search_label {
+    min-height: 120px;
+    top: 0;
+    left: 0;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -21,61 +27,7 @@ h1 {
     position: relative;
 }
 
-input {
-    font-size: 15px;
-}
-
-
-.searchbox:focus {
-  border-color: #FF0000;
-}
-
-header {
-    height: 100px;
-    top: 0;
-    left: 0;
-}
-
-#query_List li:hover {
-    cursor: pointer;
-
-    background: #A5A5A5 !important;
-
-   
-}
-
-#display_query_length {
-    color : white;
-
-    text-align: center;
-    height: 4%;
-}
-#query-input {
-    width: 95%;
-    display: inline-block;
-    margin: 0;
-}
-
-
-
-#map {
-    bottom: 0px;
-    height: 100%;
-    width: 70%;
-    position: absolute;
-    right: 0px;
-}
-
-aside {
-    position: absolute;
-    top: 115px;
-    bottom: 0px;
-    right: inherit;
-    overflow: auto;
-    width: 25%;
-}
-
-.options-box {
+.sidebar_food {
     background: #323232;
     border: 1px solid #999;
     border-radius: 3px;
@@ -86,4 +38,50 @@ aside {
     width: 30%;
     overflow-y:auto;
 }
+
+
+
+
+.searchbox:focus {
+  border-color: #FF0000;
+}
+
+
+
+#query_List li:hover {
+    cursor: pointer;
+
+    background: #A5A5A5 !important;
+
+   
+}
+
+#map {
+    bottom: 0px;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 0px;
+}
+
+
+#display_query_length {
+    color : white;
+
+    text-align: center;
+    height: 5%;
+}
+
+#query-input {
+    width: 96%;
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
 
