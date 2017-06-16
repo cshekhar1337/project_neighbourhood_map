@@ -13,7 +13,7 @@ function initializeMap() {
     
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 37.338208, lng: -121.886329},
-        zoom: 13,
+        zoom: 14,
         mapTypeControl: false
     });
     ko.applyBindings(new KnockoutViewModel());
@@ -48,14 +48,12 @@ var KnockoutViewModel = function () {
     //Creates a object from the data received by foursquare api
 var search_Object = function (dine_spots, map) {
     var self = this;
-    self.name = ko.observable(dine_spots.name);
-    self.lat = dine_spots.location.lat;
     self.lng = dine_spots.location.lng;
+    self.lat = dine_spots.location.lat;
     self.formattedPhone = ko.observable(dine_spots.contact.formattedPhone);
-
-    //map_location returns a computed observable of latitude and longitude
+    self.name = ko.observable(dine_spots.name);
     self.map_location = ko.computed(function () {
-        if (self.lat === 0 || self.lon === 0) {
+        if (self.lat === 0 || self.lng === 0) {
             return null;
         } else {
             return new google.maps.LatLng(self.lat, self.lng);
