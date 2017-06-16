@@ -6,6 +6,13 @@ body {
     padding: 0; 
 }
 
+h1 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -15,19 +22,12 @@ body {
 }
 
 input {
-    font-size: 10px;
+    font-size: 15px;
 }
 
-h1 {
-    color: #fff;
-    font-size: 22px;
-    margin: 0 0 10px 0;
-    text-align: center;
-}
 
 .searchbox:focus {
   border-color: #FF0000;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
 header {
@@ -68,19 +68,12 @@ header {
 
 aside {
     position: absolute;
-    top: 110px;
+    top: 115px;
     bottom: 0px;
     right: inherit;
     overflow: auto;
-    width: 28%;
+    width: 25%;
 }
-
-#form-search {
-    width: 100%;
-    display: inline-block;
-}
-
-
 
 .options-box {
     background: #323232;
@@ -94,42 +87,3 @@ aside {
     overflow-y:auto;
 }
 
-@media only screen and (max-width: 750px) {
-    .container {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    #map {
-        height: 60%;
-        width: 100%;
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-    }
-
-    .options-box {
-        background: #323232;
-        border: 1px solid #999;
-        border-radius: 3px;
-        line-height: 35px;
-        padding: 10px 10px 50px 10px;
-        height: 45%;
-        width: 100%;
-        top: 0;
-        overflow: hidden;
-        left: 0;
-    }
-
-    aside {
-        position: absolute;
-        top: 100px;
-        width: 100%;
-        height: 60%;
-        overflow: auto;
-    }
-
-}
