@@ -1,25 +1,28 @@
-
-body,html {
-    font-family: 'Lato', sans-serif;
+body,
+html {
+    font-family: "Lato", sans-serif;
     height: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-h1 {
+h1
+{
     color: #fff;
     font-size: 22px;
     margin: 0 0 10px 0;
     text-align: center;
 }
 
-.search_label {
+.search-label
+{
     min-height: 120px;
     top: 0;
     left: 0;
 }
 
-.container {
+.container
+{
     height: 100%;
     width: 100%;
     margin: 0;
@@ -27,7 +30,8 @@ h1 {
     position: relative;
 }
 
-.sidebar_food {
+.aside 
+{
     background: #323232;
     border: 1px solid #999;
     border-radius: 3px;
@@ -36,27 +40,22 @@ h1 {
     padding: 10px 10px 30px 10px;
     text-align: left;
     width: 30%;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
-
-
-
-.searchbox:focus {
-  border-color: #FF0000;
+.searchbox:focus
+{
+    border-color: #FF0000;
 }
 
-
-
-#query_List li:hover {
+#query-list li:hover
+{
     cursor: pointer;
-
     background: #A5A5A5 !important;
-
-   
 }
 
-#map {
+#map
+{
     bottom: 0px;
     height: 100%;
     width: 70%;
@@ -64,24 +63,17 @@ h1 {
     right: 0px;
 }
 
-
-#display_query_length {
-    color : white;
-
+#display-query-length
+{
+    color: white;
     text-align: center;
     height: 5%;
 }
 
-#query-input {
+#query-input
+{
     width: 96%;
     display: inline-block;
     margin: 0;
     font-size: 15px;
 }
-
-
-
-
-
-
-
